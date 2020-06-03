@@ -4,7 +4,7 @@ import './Jumbotron.css'
 const Jumbotron = ({ item }) => {
 	let jumboTronStyle = {};
 	if (item.customFields.backgroundImage) {
-		jumboTronStyle.backgroundImage = "url('" + item.customFields.backgroundImage.url + "?w=1000')";
+		jumboTronStyle.backgroundImage = "url('" + item.customFields.image.url + "?w=1000')";
 	}
 	return (
 		<section className="jumbotron" style={jumboTronStyle}>
